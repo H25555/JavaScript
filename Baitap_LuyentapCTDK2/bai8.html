@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input placeholder="Nhập tuổi" id="age" type="number">
+    <button onclick="kiemtra()">Kiểm tra</button> 
+    <p id="kq"></p>   
+</body>
+</html>
+<script>
+    function kiemtra(){
+        let a = document.getElementById('age').value;
+        if(a>0 && a<120){
+            document.getElementById('kq').innerHTML = 'Đây là tuổi của một người'
+        } else {
+            document.getElementById('kq').innerHTML = 'Đây không phải là tuổi của một người'
+        }
+
+    }
+</script>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let a = +prompt ('Nhập số điện tiêu thụ(kWh):')
+    let s
+    switch (true){
+        case a<50:
+            s = a*1678;
+            document.write('Số tiền phải trả là: '+ s);
+            break
+        case a> 51 && a<=100:
+            s = a*1734;
+            document.write('Số tiền phải trả là: '+ s);
+            break
+        case a> 101 && a<=200:
+            s = a*2014;
+            document.write('Số tiền phải trả là: '+ s);
+            break
+        case a> 201 && a<=300:
+            s = a*2536;
+            document.write('Số tiền phải trả là: '+ s);
+            break
+        case a> 301 && a<=400:
+            s = a*2834;
+            document.write('Số tiền phải trả là: '+ s);
+            break
+        case a> 401:
+            s = a*1678;
+            document.write('Số tiền phải trả là: '+ s);
+            break
+        
+        
+        }
+</script>
